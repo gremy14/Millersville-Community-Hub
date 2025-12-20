@@ -4,14 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Millersville Community Hub</title>
-    <link rel="stylesheet" href="style.css">
+    <style>
+        .horizontal-list {
+            display:flex;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            justify-content: space-around;
+        }
+
+        .horizontal-list li {
+            padding: 0 10px;
+        }
+    </style>
 </head>
 <body>
 
     <header class="navbar">
         <div class="logo">Millersville Community Hub</div>
         <nav>
-            <ul>
+            <ul class="horizontal-list">
                 <li><a href="non_profit.html">Non-Profits</a></li>
                 <li><a href="support.html">Support</a></li>
                 <li><a href="community_events.html">Community Events</a></li>
