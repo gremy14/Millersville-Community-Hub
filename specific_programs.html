@@ -17,46 +17,47 @@
         .navbar {
             position: sticky;
             top: 0;
-            background-color: #f6f8f7; 
+            background: linear-gradient (
+                90deg,
+                #5f8f87,
+                #6fa69c
+            ); 
+            color: white;
             z-index: 1000;
-            padding: 10px 0;
-            border-bottom: 1px solid #ccc;
-            margin-bottom: 20px;
+            padding: 16px 24px;
+            border-bottom: none;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
         }
 
         .logo {
-            font-weight: bold;
-            font-size: 1.2rem;
-            margin-bottom: 10px;
+            font-weight: 700;
+            font-size: 1.6rem;
+            color: white;
+            letter-spacing: 0.5px;
         }
 
         .horizontal-list {
-            display: flex;
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            justify-content: flex-start;
-            flex-wrap: wrap;
+            color: rgba(255, 255, 255, 0.85);
+            font-weight: 500;
         }
 
-        .horizontal-list li {
-            padding: 5px 15px 5px 0;
-        }
-
-        .horizontal-list a {
-            text-decoration: none; 
-            color: #2e3a2e;
+        .horizontal-list a:hover { 
+            color: white;
         }
 
         .active {
-            background-color: black;
+            background-color: rgba(255, 255, 255, 0.25);
             color: white !important;
-            padding: 2px 8px;
-            border-radius: 4px;
+            padding: 6px 12px;
+            border-radius: 20px;
         }
 
         h3 {
             margin-top: 25px;
+        }
+
+        main {
+            margin-top: 24px;
         }
 
     </style>
