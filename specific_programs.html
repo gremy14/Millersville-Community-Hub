@@ -7,30 +7,52 @@
     <style>
         body {
             font-family: Roboto, Arial, sans-serif;
-            background-color: f6f8f7;
-            color: 2e3a2e;
+            background-color: #f6f8f7;
+            color: #2e3a2e;
             line-height: 1.6;
             font-size: 16px;
+            margin: 20px;
         }
+
+        .navbar {
+            margin-bottom: 20px;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 10px;
+        }
+
+        .logo {
+            font-weight: bold;
+            font-size: 1.2rem;
+            margin-bottom: 10px;
+        }
+
         .horizontal-list {
-            display:flex;
+            display: flex;
             list-style-type: none;
             padding: 0;
             margin: 0;
-            justify-content: space-around;
+            justify-content: flex-start; /* Changed to flex-start for better spacing */
+            flex-wrap: wrap;
         }
 
         .horizontal-list li {
-            padding: 0 10px;
+            padding: 5px 15px 5px 0;
+        }
+
+        .horizontal-list a {
+            text-decoration: none; /* Fixed typo and applied to anchor tag */
+            color: #2e3a2e;
         }
 
         .active {
             background-color: black;
-            color: white;
+            color: white !important; /* Ensure text turns white */
+            padding: 2px 8px;
+            border-radius: 4px;
         }
 
-        .navbar {
-            text-deocration: none;
+        h3 {
+            margin-top: 25px;
         }
 
     </style>
@@ -41,40 +63,47 @@
         <div class="logo">Millersville Community Hub</div>
         <nav>
             <ul class="horizontal-list">
+                <li><a href="index.html">Home</a></li>
                 <li><a href="non_profit.html">Non-Profits</a></li>
                 <li><a href="support.html">Support</a></li>
                 <li><a href="community_events.html">Community Events</a></li>
                 <li><a href="specific_programs.html" class="active">Specific Programs</a></li>
                 <li><a href="educational.html">Educational</a></li>
                 <li><a href="career_assistance.html">Career Assistance</a></li>
-                <li><a href="index.html">Home</a></li>
             </ul>
         </nav>
     </header>
 
-    <h2>Bingo Events in Millersville PA</h2>
-        <ul>
-            <li>
-                <h3>VFW Bingo Night</h3>
-                    <p1>Event Details: <ul>
-                        <li>Date:Feburary 16th, 2026</li>
-                        <li>Location: VFW Post 7294</li>
-                        <li>Doors Open: 11:30AM</li>
-                        <li>Lunch Starts at Noon</li>
-                        <li>Bingo: 1:30-4:30PM</li>
-                    </ul>
-                    The Millersville VFW houses a Bingo Night fairly frequently. Bingo nights brings together the community and raises money for the VFW. The tickets sell out very quickly.
-                    </p1>
-                <h3>Millersville University's Welcome Back Bingo</h3>
-                    <p2>Event Details: <ul>
-                        <li>Date: Saturday January 30th</li>
-                        <li>Start Time: 9:00PM EST</li>
-                        <li>End Time: 11:45PM EST</li>
-                        <li>Entry Cost: FREE!!!!</li>
-                    </ul>
-                    One of the many opportunities the Millersville University Provides the Community is Bingo night. Normally this is held on special days, like coming back to school off of summer of winter break.
-                    </p2>
-            </li>
-        </ul>
+    <main>
+        <h2>Bingo Events in Millersville, PA</h2>
+        
+        <section>
+            <h3>VFW Bingo Night</h3>
+            <p><strong>Event Details:</strong></p>
+            <ul>
+                <li>Date: February 16th, 2026</li>
+                <li>Location: VFW Post 7294</li>
+                <li>Doors Open: 11:30 AM</li>
+                <li>Lunch Starts at Noon</li>
+                <li>Bingo: 1:30-4:30 PM</li>
+            </ul>
+            <p>
+                The Millersville VFW houses a Bingo Night fairly frequently. Bingo nights bring together the community and raise money for the VFW. The tickets sell out very quickly.
+            </p>
+
+            <h3>Millersville University's Welcome Back Bingo</h3>
+            <p><strong>Event Details:</strong></p>
+            <ul>
+                <li>Date: Saturday, January 30th</li>
+                <li>Start Time: 9:00 PM EST</li>
+                <li>End Time: 11:45 PM EST</li>
+                <li>Entry Cost: FREE!</li>
+            </ul>
+            <p>
+                One of the many opportunities Millersville University provides the community is Bingo night. Normally this is held on special days, like coming back to school after summer or winter break.
+            </p>
+        </section>
+    </main>
+
 </body>
 </html>
