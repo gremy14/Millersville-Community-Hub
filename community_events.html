@@ -4,24 +4,55 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Millersville Community Hub</title>
-    <style>
-        .horizontal-list {
-            display:flex;
-            list-style-type: none;
-            padding: 0;
-            margin: 0;
-            justify-content: space-around;
+   <style>
+        body {
+            font-family: Roboto, Arial, sans-serif;
+            background-color: #f6f8f7;
+            color: #2e3a2e;
+            line-height: 1.6;
+            font-size: 16px;
+            margin: 20px;
         }
 
-        .horizontal-list li {
-            padding: 0 10px;
+        .navbar {
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: 16px 24px;
+            border-bottom: none;
+            box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+        }
+
+        .logo {
+            font-weight: 700;
+            font-size: 1.6rem;
+            color: black;
+            letter-spacing: 0.5px;
+        }
+
+        .horizontal-list {
+            color: rgba(255, 255, 255, 0.85);
+            font-weight: 500;
+        }
+
+        .horizontal-list a:hover { 
+            color: blue;
         }
 
         .active {
-            background-color: black;
-            color: white;
+            background-color: rgba(255, 255, 255, 0.25);
+            color: black !important;
+            padding: 6px 12px;
+            border-radius: 20px;
         }
 
+        h3 {
+            margin-top: 25px;
+        }
+
+        main {
+            margin-top: 24px;
+        }
 
     </style>
 </head>
