@@ -85,7 +85,7 @@
             position: relative;
             display: inline-block;
         }
-        .dropbtn {
+        .dropbutton {
             background-color: #f1f1f1;
             color: black;
             padding: 10px 20px;
@@ -138,9 +138,11 @@
 
     <h2>Penn Manor School District</h2>
     <img src="penn-manor-high-school-logo-png_seeklogo-427021.png" alt="P M logo" class="image">
-        <h3>Elementary Schools</h3>
+        <div class="dropdown">
+            <button class="dropbutton">Elementary Schools</button>
+            <div class="dropdown-content">
             <ul>
-                <li>Central Manor Elementary</li>
+                <div onclick="showAlert('Cnetral Manor Elementary')">Central Manor Elementary</div>
                 <li>Conestoga Elementary</li>
                 <li>Eshleman Elementary</li>
                 <li>Hambright Elementary</li>
