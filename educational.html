@@ -80,6 +80,35 @@
               text-align: right;
               margin-left: auto;
               background-color: #dadada;
+          }
+          .dropdown {
+              width: 300px;
+          }
+          .toggle-dropdown {
+              width: 100%;
+              font-size: 1.2em;
+              font-weight: bold;
+              cursor: pointer;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+          }
+          .dropdown-arrow {
+              transition: transform 0.5s ease;
+          }
+          .dropdown-menu {
+              max-height: 0;
+              transition: max-height 0.6s ease;
+              margin: 0;
+              padding-left: 20px;
+          }
+
+          .dropdown-menu.open {
+              max-height: 600px;
+          }
+          .arrow.open {
+              transform: rotate(180deg);
+          }
     </style>
 </head>
 <body>
@@ -106,8 +135,12 @@
 
     <h2>Penn Manor School District</h2>
     <img src="penn-manor-high-school-logo-png_seeklogo-427021.png" alt="P M logo" class="image">
-        <h3>Elementary Schools</h3>
-            <ul>
+    <div class="dropdown">
+        <button class="toggle-dropdown">
+    <h3>Elementary Schools</h3>
+            <span class="dropdown-arrow">▾</span>
+        </button>
+            <ul class="dropdown-list">
                 <li>Central Manor Elementary</li>
                 <li>Conestoga Elementary</li>
                 <li>Eshleman Elementary</li>
@@ -116,6 +149,18 @@
                 <li>Martic Elementary</li>
                 <li>Pequea Elementary</li>
             </ul>
+    </div>
+
+    <script>
+        const toggle= document.querySelector('.dropdown-toggle');
+        const menu = document.querySelector('dropdown-menu');
+        const arrow=document.querySelector(.'arrow');
+
+        toggle.addEventListener('click', () => {
+            menu.classList.toggle('open');
+            arrow.classList.toggle('open');
+        });
+    </script>
         <h3>Secondary Schools</h3>
             <ul>
                 <li>Penn Manor High School</li>
