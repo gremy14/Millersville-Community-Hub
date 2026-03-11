@@ -80,6 +80,36 @@
               text-align: right;
               margin-left: auto;
               background-color: #dadada;
+          }
+            img {
+    display: block;
+    max-width: 400px;   /* makes images smaller */
+    width: 100%;        /* responsive */
+    height: auto;
+    margin: 15px auto;  /* centers them */
+    border-radius: 10px;
+}
+          .nav-image {
+              height: 175px;
+              width: auto;
+              float: right;
+              text-align: right;
+              margin-left: auto;
+              background-color: #dadada;
+          }
+          .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
     </style>
 </head>
 <body>
@@ -103,7 +133,12 @@
     <h2>March</h2>
 
     <p>March has so many amazing things, our 6 month anniversary and her birthday. Next is her birthday.</p>
-
+ <div class="image-grid">
+    <img src="IMG_0819.jpeg">
+    <img src="">
+    <img src="">
+    <img src="">
+</div>
     
 </main>
 </body>
