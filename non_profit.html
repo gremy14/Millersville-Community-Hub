@@ -80,6 +80,36 @@
               text-align: right;
               margin-left: auto;
               background-color: #dadada;
+          }
+            img {
+    display: block;
+    max-width: 400px;   /* makes images smaller */
+    width: 100%;        /* responsive */
+    height: auto;
+    margin: 15px auto;  /* centers them */
+    border-radius: 10px;
+}
+          .nav-image {
+              height: 175px;
+              width: auto;
+              float: right;
+              text-align: right;
+              margin-left: auto;
+              background-color: #dadada;
+          }
+          .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
     </style>
 </head>
 <body>
@@ -103,6 +133,15 @@
     <h2>September</h2>
 
     <p>Me and my love Sylvia did many things in September. This was the first time we met, first date we went on, first kiss, going to the dragway, going through a corn maze, me asking her to homecoming, riding fourwheeler together, getting pictures taken of us together, going to park city together for the first time, and our first homecoming together.</p>
+<div class="image-grid">
+    <img src="IMG_3952.jpeg">
+    <img src="IMG_3974.jpeg">
+    <img src="IMG_4073.jpeg">
+    <img src="IMG_4074.JPG">
+    <img src="IMG_4213.JPG">
+    <img src="IMG_4403.jpeg">
+    <img src="IMG_4582.JPG">
+</div>
     
 </main>
 </body>
