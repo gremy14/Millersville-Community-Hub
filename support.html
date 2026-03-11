@@ -80,6 +80,36 @@
               text-align: right;
               margin-left: auto;
               background-color: #dadada;
+          }
+           img {
+    display: block;
+    max-width: 400px;   /* makes images smaller */
+    width: 100%;        /* responsive */
+    height: auto;
+    margin: 15px auto;  /* centers them */
+    border-radius: 10px;
+}
+          .nav-image {
+              height: 175px;
+              width: auto;
+              float: right;
+              text-align: right;
+              margin-left: auto;
+              background-color: #dadada;
+          }
+          .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
     </style>
 </head>
 <body>
@@ -103,6 +133,12 @@
     <h2>October</h2>
 
     <p>In October me and my everything Sylvia did many things. First off my baby got her Drivers License!!! Then me and her looked at the moon one night. We also went to the Conestoga Wagon. Then I sadly went on vacation without my baby :( we were so sad. And then the biggest thing we did in October was go to a halloween party with Sylvie's mom. My baby was so damn beautiful at this party she was such a sexy girl <3.</p>
+   <div class="image-grid">
+    <img src="IMG_1251.JPG">
+    <img src="">
+    <img src="">
+    <img src="">
+</div>
     
 </main>
 </body>
