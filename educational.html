@@ -80,6 +80,36 @@
               text-align: right;
               margin-left: auto;
               background-color: #dadada;
+          }
+              img {
+    display: block;
+    max-width: 400px;   /* makes images smaller */
+    width: 100%;        /* responsive */
+    height: auto;
+    margin: 15px auto;  /* centers them */
+    border-radius: 10px;
+}
+          .nav-image {
+              height: 175px;
+              width: auto;
+              float: right;
+              text-align: right;
+              margin-left: auto;
+              background-color: #dadada;
+          }
+          .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
     </style>
 </head>
 <body>
@@ -103,6 +133,11 @@
     <h2>January</h2>
 
     <p>January starts off on New Year's, we watched the ball drop and kissed. I helped her buy a PC and then called her to try to set it up. A day or two later we met at her house and I helped transfer all of her Sims4 files over. It then snowed an actual shit ton and we made a huge snowman. I then had a TSA event and she came over for a family Christmas afterwards. Then me and my baby called and played video games together.</p>
+<div class="image-grid">
+    <img src="IMG_0290.JPG">
+    <img src="IMG_0313.jpeg">
+    <img src="IMG_0332.JPG">
+</div>
     
 </main>
 </body>
