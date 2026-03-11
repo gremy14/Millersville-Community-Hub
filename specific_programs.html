@@ -80,6 +80,36 @@
               text-align: right;
               margin-left: auto;
               background-color: #dadada;
+          }
+          img {
+    display: block;
+    max-width: 400px;   /* makes images smaller */
+    width: 100%;        /* responsive */
+    height: auto;
+    margin: 15px auto;  /* centers them */
+    border-radius: 10px;
+}
+          .nav-image {
+              height: 175px;
+              width: auto;
+              float: right;
+              text-align: right;
+              margin-left: auto;
+              background-color: #dadada;
+          }
+          .image-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
     </style>
 </head>
 <body>
@@ -103,6 +133,12 @@
     <h2>December</h2>
 
     <p>On the first day of December we went back down to Baltimore and Sylvia got an egg sandwich that she was craving whilst I got a crossant. While down at Baltimore we walked all the way down to the water front and then took the subway. One day we were driving and seen the "We Need Weed" guy in Lancaster dressed as the Grinch. Then on the last day of December, New Year's Eve, we hungout until the ball dropped and had kisses then went home.</p>
+ <div class="image-grid">
+    <img src="IMG_0482.jpeg">
+    <img src="IMG_0518.jpeg">
+    <img src="">
+    <img src="">
+</div>
     
 </main>
 </body>
